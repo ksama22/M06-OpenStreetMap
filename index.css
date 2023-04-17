@@ -1,3 +1,27 @@
 #demoMap{
-   height:500px
+   height:500px;
+   position: relative;
+}
+
+#marker{
+   position: absolute;
+   bottom: 10px;
+   left: 10px;
+   z-index: 1000;
+}
+
+input{
+   padding: 6px;
+   font-size: 16px;
+   border-radius: 6px;
+   border: 1px solid black;
+}
+
+button{
+   background-color: blue;
+   color: white;
+   font-size: 16px;
+   padding: 8px;
+   border: none;
+border-radius: 6px;
 }
