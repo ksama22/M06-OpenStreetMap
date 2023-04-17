@@ -11,16 +11,18 @@
 </head>
 
 <body>
-   
-    <div id="demoMap">
 
+    <div id="demoMap">
         <div id="marker">
             <input value="2.11" id="inputlon" type="number" step="0.01" placeholder="longitud" value="">
             <input value="41.39" id="inputlat" type="number" step="0.01" placeholder="latitud" value="">
             <input value="bcn" id="inputname" type="text" placeholder="nom">
             <button onclick="addMarker()">Marca</button>
         </div>
-
+        <button id="btnMuseus" onclick="callApi()">Marca Museus</button>
+        <div id="carregaPagina">
+            <div id="loading"></div>
+        </div>
     </div>
 
 

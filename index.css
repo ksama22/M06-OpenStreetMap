@@ -1,27 +1,72 @@
-#demoMap{
-   height:500px;
-   position: relative;
+/* Como el tiempo, el padre es relativo :D */
+#demoMap {
+  height: 500px;
+  position: relative;
 }
 
-#marker{
-   position: absolute;
-   bottom: 10px;
-   left: 10px;
-   z-index: 1000;
+/* Hijo absoluto*/
+#marker {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  z-index: 1000;
 }
 
-input{
-   padding: 6px;
-   font-size: 16px;
-   border-radius: 6px;
-   border: 1px solid black;
+input {
+  padding: 6px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: 1px solid black;
 }
 
-button{
-   background-color: blue;
-   color: white;
-   font-size: 16px;
-   padding: 8px;
-   border: none;
-border-radius: 6px;
+button {
+  background-color: blue;
+  color: white;
+  font-size: 16px;
+  padding: 8px;
+  border: none;
+  border-radius: 6px;
+}
+
+/* Hijo absoluto, Boton busca museus */
+#btnMuseus {
+  position: absolute;
+  z-index: 1000;
+  right: 10px;
+}
+/*  Hijo absoluto, Fondo oscuro D: */
+#carregaPagina {
+  background-color: rgba(0, 0, 0, 0.556);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 1001;
+  display: none;
+}
+
+/*  Hijo absoluto, Mi bonito loading*/
+#loading {
+  border-top: 4px solid lightblue;
+  border-bottom: 4px solid lightblue;
+  border-left: 4px solid lightblue;
+  border-right: 4px solid black;
+
+  z-index: 1002;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  animation: rota 1s infinite linear;
+}
+
+/* Gira, gira, gira, gira*/
+@keyframes rota {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
